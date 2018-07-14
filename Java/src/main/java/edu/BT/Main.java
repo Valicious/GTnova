@@ -1,6 +1,7 @@
 package edu.BT;
 
 import edu.BT.input.RegisterInput;
+import edu.BT.world.WorldGen;
 import org.lwjgl.glfw.GLFWVidMode;
 import org.lwjgl.opengl.GL;
 
@@ -30,11 +31,12 @@ public class Main {
 
         // Terminate GLFW and free the error callback
         glfwTerminate();
+        System.exit(0);
         //glfwSetErrorCallback(null).free();
     }
 
     private void init() {
-        new Log();
+        Log log = new Log();
         // Setup an error callback. The default implementation
         // will print the error message in System.err.
         //GLFWErrorCallback.createPrint(System.err).set();
@@ -52,7 +54,8 @@ public class Main {
         if (window == NULL)
             throw new RuntimeException("Failed to create the GLFW window");
 
-        RegisterInput.setupInputRegistry(window);
+        Log.SYSTEM("Window Created");
+        RegisterInput.setupInputRegistry();
 
         /*//swopped with variables
         // Get the thread stack and push a new frame
@@ -105,11 +108,13 @@ public class Main {
         // Set the clear color
         glClearColor(1.0f, 0.0f, 0.0f, 0.0f);
 
+        WorldGen newWorld = new WorldGen();
+
         // Run the rendering loop until the user has attempted to close
         // the window or has pressed the ESCAPE key.
         while (!glfwWindowShouldClose(window)) {
             glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // clear the framebuffer
-            GameLoop.run();
+            GameLoop.run(window);
             glfwSwapBuffers(window); // swap the color buffers
             // Poll for window events. The key callback above will only be
             // invoked during this call.
