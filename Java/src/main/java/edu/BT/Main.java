@@ -108,7 +108,7 @@ public class Main {
         // Set the clear color
         glClearColor(1.0f, 0.0f, 0.0f, 0.0f);
 
-        WorldGen newWorld = new WorldGen();
+        //WorldGen newWorld = new WorldGen();
 
         // Run the rendering loop until the user has attempted to close
         // the window or has pressed the ESCAPE key.
