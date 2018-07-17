@@ -1,7 +1,7 @@
 package edu.BT;
 
 import edu.BT.input.RegisterInput;
-import edu.BT.world.WorldGen;
+import edu.BT.utils.Log;
 import org.lwjgl.glfw.GLFWVidMode;
 import org.lwjgl.opengl.GL;
 
@@ -13,8 +13,8 @@ import static org.lwjgl.system.MemoryUtil.NULL;
 public class Main {
     private long window;
     //TODO configure windows resolution
-    private int screenWidth = 640;
-    private int screenHeight = 480;
+    private int screenWidth = 840;
+    private int screenHeight = 680;
 
     public static void main(String[] args) {
         new Main().run();
@@ -36,7 +36,6 @@ public class Main {
     }
 
     private void init() {
-        Log log = new Log();
         // Setup an error callback. The default implementation
         // will print the error message in System.err.
         //GLFWErrorCallback.createPrint(System.err).set();
@@ -53,6 +52,8 @@ public class Main {
         window = glfwCreateWindow(screenWidth, screenHeight, "GTnova", NULL, NULL);
         if (window == NULL)
             throw new RuntimeException("Failed to create the GLFW window");
+
+        Log log = new Log(window);
 
         Log.SYSTEM("Window Created");
         RegisterInput.setupInputRegistry();
