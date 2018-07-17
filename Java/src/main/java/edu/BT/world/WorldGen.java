@@ -1,6 +1,6 @@
 package edu.BT.world;
 
-import edu.BT.Log;
+import edu.BT.utils.Log;
 import org.lwjgl.BufferUtils;
 
 import javax.imageio.ImageIO;
