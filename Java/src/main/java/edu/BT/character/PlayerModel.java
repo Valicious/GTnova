@@ -1,5 +1,14 @@
 package edu.BT.character;
 
-public class PlayerModel {
+import edu.BT.entities.Entity;
+
+/*Cntr Alt L - respacing
+ctrl shift ? - commenting*/
+
+public class PlayerModel extends Entity {
+
+
+
+
 
 }

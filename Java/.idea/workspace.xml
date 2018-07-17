@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79e0ed88-b9e4-435d-9fec-0d12c6ece3c2" name="Default" comment="Added Player and Entity Controller and model">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/BT/blocks/Block.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/BT/blocks/BlockController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/BT/blocks/Tile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/BT/utils/Pair.java" afterDir="false" />
+    <list default="true" id="79e0ed88-b9e4-435d-9fec-0d12c6ece3c2" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/BT/entities/TileEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/BT/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/BT/utils/Log.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/BT/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/BT/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/BT/character/PlayerModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/BT/character/PlayerModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/BT/entities/EntityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/BT/entities/EntityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/BT/input/RegisterInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/BT/input/RegisterInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/BT/world/WorldGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/BT/world/WorldGen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/BT/GameLoop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/BT/GameLoop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/BT/Log$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/BT/Log.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/BT/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/BT/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/BT/input/RegisterInput$inputTriplet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/BT/input/RegisterInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/BT/input/RegisterInput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/BT/world/WorldGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/BT/world/WorldGen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/BT/entities/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/BT/entities/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/BT/entities/LivingEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/BT/entities/LivingEntity.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,8 +24,8 @@
       <file leaf-file-name="Log.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/utils/Log.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="694">
-              <caret line="71" column="5" lean-forward="true" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+            <state relative-caret-position="918">
+              <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1147#1148#0" expanded="true" />
@@ -53,8 +39,8 @@
       <file leaf-file-name="Pair.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/utils/Pair.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+            <state relative-caret-position="153">
+              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
               <folding>
                 <element signature="e#858#859#0" expanded="true" />
                 <element signature="e#884#885#0" expanded="true" />
@@ -68,8 +54,8 @@
       <file leaf-file-name="RegisterInput.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/input/RegisterInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-330">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="510">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
@@ -77,17 +63,17 @@
       <file leaf-file-name="PlayerModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/character/PlayerModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Block.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Block.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/blocks/Block.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="562">
-              <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+            <state relative-caret-position="357">
+              <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,7 +84,7 @@
       <file leaf-file-name="Tile.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/blocks/Tile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
+            <state relative-caret-position="34">
               <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
@@ -107,7 +93,7 @@
       <file leaf-file-name="PrintStream.java" pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/io/PrintStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
+            <state relative-caret-position="13906">
               <caret line="869" column="51" selection-start-line="869" selection-start-column="45" selection-end-line="869" selection-end-column="51" />
               <folding>
                 <element signature="e#29974#29975#0" expanded="true" />
@@ -120,26 +106,26 @@
       <file leaf-file-name="Entity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/entities/Entity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            <state relative-caret-position="119">
+              <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EntityController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/entities/EntityController.java">
+      <file leaf-file-name="TileEntity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/entities/TileEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
+            <state relative-caret-position="51">
+              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameLoop.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/GameLoop.java">
+      <file leaf-file-name="LivingEntity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/entities/LivingEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+            <state relative-caret-position="85">
+              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -168,7 +154,6 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/BT/input/keyboardExtension.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/BT/world/OpenSimplexNoise.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/BT/world/WorldGen.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/BT/entities/Entity.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/BT/GameLoop.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/BT/blocks/Tile.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/BT/utils/Pair.java" />
@@ -177,8 +162,11 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/BT/input/RegisterInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/BT/entities/EntityController.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/BT/utils/Log.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/BT/character/PlayerModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/BT/blocks/Block.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/BT/entities/LivingEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/BT/character/PlayerModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/BT/entities/Entity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/BT/entities/TileEntity.java" />
       </list>
     </option>
   </component>
@@ -210,7 +198,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
@@ -223,11 +210,6 @@
             <path>
               <item name="GTnova" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GTnova" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -250,24 +232,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="BT" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GTnova" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="BT" type="462c0819:PsiDirectoryNode" />
-              <item name="blocks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GTnova" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="BT" type="462c0819:PsiDirectoryNode" />
-              <item name="character" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GTnova" type="b2602c69:ProjectViewProjectNode" />
@@ -281,25 +245,13 @@
             <path>
               <item name="GTnova" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="BT" type="462c0819:PsiDirectoryNode" />
-              <item name="input" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GTnova" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="BT" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -310,6 +262,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.14689709" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -401,6 +354,8 @@
       <workItem from="1531493047644" duration="34833000" />
       <workItem from="1531665894165" duration="6615000" />
       <workItem from="1531833616090" duration="1498000" />
+      <workItem from="1531836276452" duration="1510000" />
+      <workItem from="1531838011086" duration="764000" />
     </task>
     <task id="LOCAL-00001" summary="Set Input structure. Set Logging structure.">
       <created>1531563694758</created>
@@ -416,19 +371,32 @@
       <option name="project" value="LOCAL" />
       <updated>1531667137473</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added Player and Entity Controller and model">
+      <created>1531837266651</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1531837266651</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added Living Entity">
+      <created>1531837295273</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1531837295273</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45609000" />
+    <option name="totallyTimeSpent" value="47883000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32897604" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -437,13 +405,13 @@
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" weight="0.32897604" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.32897604" />
+      <window_info anchor="bottom" id="Floobits" visible="true" weight="0.3296875" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32897604" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49673203" visible="true" weight="0.2196162" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.4918415" visible="true" weight="0.21888727" />
       <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="SciView" order="2" />
-      <window_info id="Structure" order="6" sideWeight="0.503268" side_tool="true" visible="true" weight="0.2196162" />
+      <window_info id="Structure" order="6" sideWeight="0.5081585" side_tool="true" visible="true" weight="0.21888727" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -451,9 +419,11 @@
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39978212" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32897604" />
       <window_info anchor="right" id="Commander" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="2" />
       <window_info anchor="bottom" id="Find" order="3" />
     </layout>
   </component>
@@ -468,7 +438,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Set Input structure. Set Logging structure." />
     <MESSAGE value="Added Player and Entity Controller and model" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Player and Entity Controller and model" />
+    <MESSAGE value="Added Living Entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Living Entity" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -490,20 +461,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="123" column="36" selection-start-line="123" selection-start-column="36" selection-end-line="123" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/input/keyboardExtension.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-glfw/3.1.6/lwjgl-glfw-3.1.6.jar!/org/lwjgl/glfw/GLFWKeyCallbackI.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -774,8 +731,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/GameLoop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        <state relative-caret-position="306">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -796,25 +753,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/entities/EntityController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/io/PrintStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="869" column="51" selection-start-line="869" selection-start-column="45" selection-end-line="869" selection-end-column="51" />
-          <folding>
-            <element signature="e#29974#29975#0" expanded="true" />
-            <element signature="e#30017#30018#0" expanded="true" />
-          </folding>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/utils/Log.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="71" column="5" lean-forward="true" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+        <state relative-caret-position="918">
+          <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1147#1148#0" expanded="true" />
@@ -826,8 +772,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/utils/Pair.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        <state relative-caret-position="153">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
           <folding>
             <element signature="e#858#859#0" expanded="true" />
             <element signature="e#884#885#0" expanded="true" />
@@ -839,39 +785,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/input/RegisterInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/character/PlayerModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/entities/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        <state relative-caret-position="510">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/blocks/Tile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
+        <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/blocks/Block.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+        <state relative-caret-position="357">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/io/PrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13906">
+          <caret line="869" column="51" selection-start-line="869" selection-start-column="45" selection-end-line="869" selection-end-column="51" />
+          <folding>
+            <element signature="e#29974#29975#0" expanded="true" />
+            <element signature="e#30017#30018#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/character/PlayerModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/entities/LivingEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/entities/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/entities/TileEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
         </state>
       </provider>
     </entry>
