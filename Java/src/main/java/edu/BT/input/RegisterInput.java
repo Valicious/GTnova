@@ -1,7 +1,8 @@
 package edu.BT.input;
 
 import edu.BT.GameLoop;
-import edu.BT.Log;
+import edu.BT.utils.Log;
+import edu.BT.utils.Pair;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -10,14 +11,13 @@ import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 import static org.lwjgl.glfw.GLFW.*;
-import static org.lwjgl.glfw.GLFW.glfwGetKey;
 
 @SuppressWarnings("unused")
 public class RegisterInput {
-    private static HashMap<Integer,Boolean> keyCooldownSet;
+    private static HashMap<Integer, Boolean> keyCooldownSet;
 
     //Name of input event and the combination of keys.
-    private static HashMap<String, inputTriplet> inputEvents;
+    private static HashMap<String, Pair<Integer, Method>> inputEvents;
 
     /**
      * List of keyboard inputs. See class inputTriplet for other constructors.
@@ -30,13 +30,8 @@ public class RegisterInput {
         inputEvents = new HashMap<>();
         keyCooldownSet = new HashMap<>();
         //All keyboard action are defined below!
-        try {
-            inputEvents.put("close", new inputTriplet(GLFW_KEY_ESCAPE, "closeWindow"));
-            inputEvents.put("changecol", new inputTriplet(GLFW_KEY_2, "do2"));
-        } catch (NoSuchMethodException e) {
-            System.out.println("unable to find method");
-            e.printStackTrace();
-        }
+        inputEvents.put("close", new Pair(GLFW_KEY_ESCAPE, getMethodFromName("closeWindow")));
+        inputEvents.put("changecol", new Pair(GLFW_KEY_2, getMethodFromName("do2")));
         Log.SYSTEM("Keybindings set!");
     }
 
@@ -49,8 +44,8 @@ public class RegisterInput {
     }
 
     private static void do2(long curWindow) {
-        GameLoop.x += 0.01;
-        //System.out.println(GameLoop.x);
+        GameLoop.x -= 0.01;
+        System.out.println(GameLoop.x);
     }
 
     //</editor-fold>
@@ -62,62 +57,36 @@ public class RegisterInput {
         new RegisterInput();
     }
 
+    private Method getMethodFromName(String mName){
+        try {
+            return RegisterInput.class.getDeclaredMethod(mName, long.class);
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+            Log.die(10);
+        }
+        return null;
+    }
+
     public static void update(long curWindow) {
         inputEvents.forEach((name, input) -> {
-            if (glfwGetKey(curWindow, input.key) == GLFW_TRUE) {
-                if (keyCooldownSet.getOrDefault(input.key,false)) return;
-                keyCooldownSet.put(input.key,true);
-                new ScheduledThreadPoolExecutor(1).schedule(() ->  keyCooldownSet.put(input.key,false),100,TimeUnit.MILLISECONDS);
+            if (glfwGetKey(curWindow, input.getKey()) == GLFW_TRUE) {
+                if (keyCooldownSet.getOrDefault(input.getKey(), false)) return;
+                keyCooldownSet.put(input.getKey(), true);
+                new ScheduledThreadPoolExecutor(1).schedule(() -> keyCooldownSet.put(input.getKey(), false), 100, TimeUnit.MILLISECONDS);
                 try {
-                    input.event.invoke(RegisterInput.class, curWindow);
+                    input.getValue().invoke(RegisterInput.class, curWindow);
                 } catch (IllegalAccessException e) {
-                    System.out.println("unable to access method");
+                    Log.ERROR("unable to access method");
                     e.printStackTrace();
+                    Log.die(10);
                 } catch (InvocationTargetException e) {
                     System.out.println("unable to invoke method");
                     e.printStackTrace();
+                    Log.die(10);
                 }
             }
 
         });
-        /*glfwSetKeyCallback(curWindow, (window, key, scancode, action, mods) -> {
-            inputEvents.forEach((name, input) -> {
-                if (key == input.key && mods == input.mods) {
-                    if (input.action == KEY_DOWN) {
-                        if (action == 0) return;
-
-                    } else if (action != input.action) return;
-                    System.out.println(action);
-                    try {
-                        input.event.invoke(RegisterInput.class, window);
-                    } catch (IllegalAccessException e) {
-                        System.out.println("unable to access method");
-                        e.printStackTrace();
-                    } catch (InvocationTargetException e) {
-                        System.out.println("unable to invoke method");
-                        e.printStackTrace();
-                    }
-                }
-
-            });
-        });*/
     }
-
-    private class inputTriplet {
-        public int key, action;
-        Method event;
-
-        public inputTriplet(int key, String method) throws NoSuchMethodException {
-            this.key = key;
-            this.event = RegisterInput.class.getDeclaredMethod(method, long.class);
-        }
-
-        public inputTriplet(int key, int action, String method) throws NoSuchMethodException {
-            this(key, method);
-            this.action = action;
-        }
-
-    }
-
     //</editor-fold desc="Event Controllers">
 }
