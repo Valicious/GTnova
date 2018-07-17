@@ -6,5 +6,5 @@ public abstract class Entity {
     int eId;
     boolean isGrav;
 
-
+//af
 }
