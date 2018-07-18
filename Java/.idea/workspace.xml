@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="79e0ed88-b9e4-435d-9fec-0d12c6ece3c2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/BT/character/PlayerModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/BT/character/PlayerModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/BT/entities/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/BT/entities/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/BT/entities/EntityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/BT/entities/EntityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/BT/entities/TileEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/BT/entities/TileEntity.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,7 +21,7 @@
       <file leaf-file-name="Log.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/utils/Log.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
+            <state relative-caret-position="918">
               <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -55,26 +51,26 @@
       <file leaf-file-name="RegisterInput.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/input/RegisterInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="510">
               <caret line="40" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Entity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Entity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/entities/Entity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+            <state relative-caret-position="102">
+              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerModel.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PlayerModel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/character/PlayerModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+            <state relative-caret-position="204">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -91,8 +87,8 @@
       <file leaf-file-name="LivingEntity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/entities/LivingEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="25" />
+            <state relative-caret-position="102">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -165,8 +161,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -218,7 +214,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -325,7 +321,8 @@
       <workItem from="1531836276452" duration="1510000" />
       <workItem from="1531838011086" duration="883000" />
       <workItem from="1531851916853" duration="1478000" />
-      <workItem from="1531899005829" duration="1136000" />
+      <workItem from="1531899005829" duration="1259000" />
+      <workItem from="1531931238733" duration="480000" />
     </task>
     <task id="LOCAL-00001" summary="Set Input structure. Set Logging structure.">
       <created>1531563694758</created>
@@ -362,11 +359,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531838886719</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added Living Entity - Adjusted Player entity">
+      <created>1531900208286</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1531900208286</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50616000" />
+    <option name="totallyTimeSpent" value="51237000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -377,18 +381,18 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50073206" side_tool="true" weight="0.3296875" />
       <window_info anchor="right" id="Maven Projects" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" weight="0.32897604" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.32897604" />
-      <window_info anchor="bottom" id="Floobits" order="12" visible="true" weight="0.3296875" />
+      <window_info anchor="bottom" id="Floobits" order="12" sideWeight="0.49926794" visible="true" weight="0.3296875" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32897604" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.4871795" visible="true" weight="0.21888727" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.4848485" visible="true" weight="0.21888727" />
       <window_info anchor="right" id="Database" order="5" />
-      <window_info id="Structure" order="6" sideWeight="0.51282054" side_tool="true" visible="true" weight="0.21888727" />
+      <window_info id="Structure" order="6" sideWeight="0.5151515" side_tool="true" visible="true" weight="0.21888727" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -417,7 +421,8 @@
     <MESSAGE value="Added Player and Entity Controller and model" />
     <MESSAGE value="Added Living Entity" />
     <MESSAGE value="Added Tile Entity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Tile Entity" />
+    <MESSAGE value="Added Living Entity - Adjusted Player entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Living Entity - Adjusted Player entity" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -465,11 +470,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1096">
           <caret line="56" column="37" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#run#0;class#Main#0" />
-            <element signature="method#init#0;class#Main#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -561,11 +561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
           <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#run#0;class#Main#0" />
-            <element signature="method#init#0;class#Main#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -699,11 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="584">
           <caret line="117" column="10" selection-start-line="117" selection-start-column="10" selection-end-line="117" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#run#0;class#Main#0" />
-            <element signature="method#init#0;class#Main#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -746,9 +736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -756,10 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13906">
           <caret line="869" column="51" selection-start-line="869" selection-start-column="45" selection-end-line="869" selection-end-column="51" />
-          <folding>
-            <element signature="e#29974#29975#0" expanded="true" />
-            <element signature="e#30017#30018#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -772,7 +755,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/input/RegisterInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="510">
           <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
@@ -792,7 +775,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/utils/Log.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
+        <state relative-caret-position="918">
           <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -803,24 +786,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/character/PlayerModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/entities/LivingEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="25" />
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/entities/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+        <state relative-caret-position="102">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/character/PlayerModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
