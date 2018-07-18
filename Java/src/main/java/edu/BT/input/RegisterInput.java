@@ -32,6 +32,10 @@ public class RegisterInput {
         //All keyboard action are defined below!
         inputEvents.put("close", new Pair(GLFW_KEY_ESCAPE, getMethodFromName("closeWindow")));
         inputEvents.put("changecol", new Pair(GLFW_KEY_2, getMethodFromName("do2")));
+        inputEvents.put("playerright", new Pair(GLFW_KEY_D, getMethodFromName("playermoveright")));
+        inputEvents.put("playerleft", new Pair(GLFW_KEY_A, getMethodFromName("playermoveleft")));
+        inputEvents.put("playerup", new Pair(GLFW_KEY_W, getMethodFromName("playermoveup")));
+        inputEvents.put("playerdown", new Pair(GLFW_KEY_S, getMethodFromName("playermovedown")));
         Log.SYSTEM("Keybindings set!");
     }
 

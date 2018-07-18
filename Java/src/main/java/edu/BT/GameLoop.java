@@ -1,5 +1,6 @@
 package edu.BT;
 
+import edu.BT.character.PlayerModel;
 import edu.BT.input.RegisterInput;
 
 import static org.lwjgl.opengl.GL11.*;
@@ -20,5 +21,7 @@ public class GameLoop {
         glTexCoord2f(1,0);
         glVertex2d(-x,-0.5);
         glEnd();
+
+
     }
 }
