@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79e0ed88-b9e4-435d-9fec-0d12c6ece3c2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/BT/entities/TileEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/BT/character/PlayerModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/BT/character/PlayerModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/BT/entities/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/BT/entities/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/BT/entities/LivingEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/BT/entities/LivingEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/BT/entities/EntityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/BT/entities/EntityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/BT/entities/TileEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/BT/entities/TileEntity.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,7 +25,7 @@
       <file leaf-file-name="Log.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/utils/Log.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
+            <state relative-caret-position="969">
               <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -54,8 +55,17 @@
       <file leaf-file-name="RegisterInput.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/input/RegisterInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
+            <state relative-caret-position="255">
               <caret line="40" selection-start-line="40" selection-end-line="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Entity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/entities/Entity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -63,60 +73,17 @@
       <file leaf-file-name="PlayerModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/character/PlayerModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="136">
+              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Block.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/blocks/Block.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/blocks/Tile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PrintStream.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/io/PrintStream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13906">
-              <caret line="869" column="51" selection-start-line="869" selection-start-column="45" selection-end-line="869" selection-end-column="51" />
-              <folding>
-                <element signature="e#29974#29975#0" expanded="true" />
-                <element signature="e#30017#30018#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Entity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/entities/Entity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TileEntity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TileEntity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/entities/TileEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -124,8 +91,8 @@
       <file leaf-file-name="LivingEntity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/entities/LivingEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            <state relative-caret-position="34">
+              <caret line="2" column="25" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -164,9 +131,9 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/BT/utils/Log.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/BT/blocks/Block.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/BT/entities/LivingEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/BT/entities/TileEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/BT/character/PlayerModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/BT/entities/Entity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/BT/entities/TileEntity.java" />
       </list>
     </option>
   </component>
@@ -198,7 +165,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -251,12 +218,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -355,7 +323,9 @@
       <workItem from="1531665894165" duration="6615000" />
       <workItem from="1531833616090" duration="1498000" />
       <workItem from="1531836276452" duration="1510000" />
-      <workItem from="1531838011086" duration="764000" />
+      <workItem from="1531838011086" duration="883000" />
+      <workItem from="1531851916853" duration="1478000" />
+      <workItem from="1531899005829" duration="1136000" />
     </task>
     <task id="LOCAL-00001" summary="Set Input structure. Set Logging structure.">
       <created>1531563694758</created>
@@ -385,11 +355,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531837295273</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added Tile Entity">
+      <created>1531838886719</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1531838886719</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47883000" />
+    <option name="totallyTimeSpent" value="50616000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -405,26 +382,26 @@
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" weight="0.32897604" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.32897604" />
-      <window_info anchor="bottom" id="Floobits" visible="true" weight="0.3296875" />
+      <window_info anchor="bottom" id="Floobits" order="12" visible="true" weight="0.3296875" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32897604" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.4918415" visible="true" weight="0.21888727" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.4871795" visible="true" weight="0.21888727" />
       <window_info anchor="right" id="Database" order="5" />
-      <window_info id="Structure" order="6" sideWeight="0.5081585" side_tool="true" visible="true" weight="0.21888727" />
+      <window_info id="Structure" order="6" sideWeight="0.51282054" side_tool="true" visible="true" weight="0.21888727" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="4" sideWeight="0.503268" side_tool="true" weight="0.2196162" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39978212" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32897604" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="right" id="Commander" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="2" />
       <window_info anchor="bottom" id="Find" order="3" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="right" id="SciView" order="2" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,7 +416,8 @@
     <MESSAGE value="Set Input structure. Set Logging structure." />
     <MESSAGE value="Added Player and Entity Controller and model" />
     <MESSAGE value="Added Living Entity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Living Entity" />
+    <MESSAGE value="Added Tile Entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Tile Entity" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -757,39 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/utils/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1147#1148#0" expanded="true" />
-            <element signature="e#1207#1208#0" expanded="true" />
-            <element signature="method#reformat#0;class#Log#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/utils/Pair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding>
-            <element signature="e#858#859#0" expanded="true" />
-            <element signature="e#884#885#0" expanded="true" />
-            <element signature="e#1006#1007#0" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/input/RegisterInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/blocks/Tile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -818,31 +763,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/entities/TileEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/input/RegisterInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/utils/Pair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding>
+            <element signature="e#858#859#0" expanded="true" />
+            <element signature="e#884#885#0" expanded="true" />
+            <element signature="e#1006#1007#0" expanded="true" />
+            <element signature="e#1034#1035#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/utils/Log.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1147#1148#0" expanded="true" />
+            <element signature="e#1207#1208#0" expanded="true" />
+            <element signature="method#reformat#0;class#Log#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/character/PlayerModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="136">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/entities/LivingEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        <state relative-caret-position="34">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/entities/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/BT/entities/TileEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        <state relative-caret-position="68">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
         </state>
       </provider>
     </entry>
