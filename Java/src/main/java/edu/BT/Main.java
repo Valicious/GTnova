@@ -1,5 +1,6 @@
 package edu.BT;
 
+import edu.BT.character.PlayerModel;
 import edu.BT.input.RegisterInput;
 import edu.BT.utils.Log;
 import org.lwjgl.glfw.GLFWVidMode;
@@ -93,10 +94,16 @@ public class Main {
         // Enable v-sync
         // glfwSwapInterval(1);
 
+        //Creating character
+
+
         // Make the window visible
         glfwShowWindow(window);
         Log.SYSTEM("Initialization completed successfully");
     }
+
+
+
 
     private void loop() {
         // This line is critical for LWJGL's interoperation with GLFW's

@@ -1,6 +1,8 @@
 package edu.BT.entities;
 
 public class LivingEntity extends Entity {
-    double Health;
-    double Breath;
+    protected double Health;
+    protected double Breath;
+    protected int ySpeed;
+    protected int xSpeed;
 }

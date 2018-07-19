@@ -1,5 +1,5 @@
 package edu.BT.entities;
 
-public class EntityController {
+public abstract class EntityController {
 
 }
