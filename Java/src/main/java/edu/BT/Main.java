@@ -24,7 +24,7 @@ public class Main extends Application {
         Log.SYSTEM("Main Thread Started!");
         primaryStage.setTitle("GTNova");
         primaryStage.setResizable(false);
-        Scene root = new MainMenu();
+        MainMenu root = new MainMenu();
         primaryStage.setScene(root);
         new Game(root);
         primaryStage.show();

@@ -7,15 +7,15 @@ import java.awt.image.BufferedImage;
 /*Cntr Alt L - respacing
 ctrl shift ? - commenting*/
 
-public class PlayerModel extends LivingEntity {
+public class PlayerEntity extends LivingEntity {
     BufferedImage sprite;
 
-    public void PlayerModel(BufferedImage image, String name)
+    public PlayerEntity(BufferedImage image, String name)
     {
         sprite = image;
         eId = name;
-        xpos = 0;
-        ypos = 0;
+        xpos.setValue(0);
+        ypos.setValue(0);
         xSpeed = 5;
         ySpeed = 5;
     }
