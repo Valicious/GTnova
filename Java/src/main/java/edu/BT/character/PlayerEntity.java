@@ -1,21 +1,19 @@
 package edu.BT.character;
 
 import edu.BT.entities.LivingEntity;
-
-import java.awt.image.BufferedImage;
+import edu.BT.utils.AnimationController;
 
 /*Cntr Alt L - respacing
 ctrl shift ? - commenting*/
 
 public class PlayerEntity extends LivingEntity {
-    BufferedImage sprite;
+    AnimationController sprite;
 
-    public PlayerEntity(BufferedImage image, String name)
+    public PlayerEntity(AnimationController image, String name)
     {
         sprite = image;
         eId = name;
-        xpos.setValue(0);
-        ypos.setValue(0);
+    //    xpos.bindBidirectional(sprite.);
         xSpeed = 5;
         ySpeed = 5;
     }

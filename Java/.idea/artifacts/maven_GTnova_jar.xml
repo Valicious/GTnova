@@ -1,0 +1,30 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="maven-GTnova:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/maven_GTnova_jar</output-path>
+    <root id="archive" name="maven-GTnova.jar">
+      <element id="module-output" name="maven-GTnova" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-stb/3.1.6/lwjgl-stb-3.1.6-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/lwjgl/lwjgl/3.1.6/lwjgl-3.1.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-glfw/3.1.6/lwjgl-glfw-3.1.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/joml/joml/1.9.9/joml-1.9.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-vulkan/3.1.6/lwjgl-vulkan-3.1.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-stb/3.1.6/lwjgl-stb-3.1.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-opengl/3.1.6/lwjgl-opengl-3.1.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-bgfx/3.1.6/lwjgl-bgfx-3.1.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-nanovg/3.1.6/lwjgl-nanovg-3.1.6-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-bgfx/3.1.6/lwjgl-bgfx-3.1.6-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/lwjgl/lwjgl/3.1.6/lwjgl-3.1.6-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-par/3.1.6/lwjgl-par-3.1.6-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-par/3.1.6/lwjgl-par-3.1.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-opengl/3.1.6/lwjgl-opengl-3.1.6-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-openal/3.1.6/lwjgl-openal-3.1.6-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-openal/3.1.6/lwjgl-openal-3.1.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-assimp/3.1.6/lwjgl-assimp-3.1.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-glfw/3.1.6/lwjgl-glfw-3.1.6-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-nuklear/3.1.6/lwjgl-nuklear-3.1.6-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-nuklear/3.1.6/lwjgl-nuklear-3.1.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-nanovg/3.1.6/lwjgl-nanovg-3.1.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-assimp/3.1.6/lwjgl-assimp-3.1.6-natives-windows.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

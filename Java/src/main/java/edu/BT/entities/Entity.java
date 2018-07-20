@@ -8,10 +8,5 @@ public abstract class Entity {
     protected IntegerProperty xpos;
     protected IntegerProperty ypos;
 
-    public Entity() {
-        gravityState.bindBidirectional(xpos);
-
-        xpos.setValue(3);
-    }
 }
   
