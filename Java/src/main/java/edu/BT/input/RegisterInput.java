@@ -1,6 +1,5 @@
 package edu.BT.input;
 
-import edu.BT.GameLoop;
 import edu.BT.utils.Log;
 import edu.BT.utils.Pair;
 
@@ -47,10 +46,6 @@ public class RegisterInput {
         glfwSetWindowShouldClose(curWindow, true); // We will detect this in the rendering loop
     }
 
-    private static void do2(long curWindow) {
-        GameLoop.x -= 0.01;
-        System.out.println(GameLoop.x);
-    }
 
     //</editor-fold>
 

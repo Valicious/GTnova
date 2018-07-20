@@ -10,7 +10,6 @@ import java.util.Arrays;
 import static org.lwjgl.glfw.GLFW.glfwSetWindowShouldClose;
 
 public class Log {
-    private static long window;
     private static final String ANSI_RESET = "\u001B[0m";
     private static final String ANSI_BLACK = "\u001B[30m";
     private static final String ANSI_RED = "\u001B[31m";
@@ -19,8 +18,7 @@ public class Log {
     private static final String ANSI_CYAN = "\u001B[36m";
     public static final String ANSI_RED_BACKGROUND = "\u001B[41m";
 
-    public Log(long window) {
-        this.window = window;
+    public Log() {
         SYSTEM("GTnova alpha, LWJGL " + Version.getVersion() + "!");
         PrintStream myStream = new PrintStream(System.out) {
             @Override
@@ -68,6 +66,7 @@ public class Log {
                 break;
             }
         }
-        glfwSetWindowShouldClose(window, true);
+        //TODO Schedule scene shutdown
+        //glfwSetWindowShouldClose(window, true);
     }
 }
