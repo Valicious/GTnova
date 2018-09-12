@@ -2,7 +2,7 @@ package us.gtnova.lib.utils;
 
 import us.gtnova.lib.runnable.RunnableObjects;
 
-public class Property<G>  {
+public class Property<G> {
     private G value;
     private RunnableObjects actionGet = null;
     private RunnableObjects actionSet = null;
@@ -11,22 +11,21 @@ public class Property<G>  {
         this.value = value;
     }
 
-    public Property(G value, RunnableObjects get, RunnableObjects set) {
-        this.value = value;
-        actionGet = get;
-        actionSet = set;
-    }
-
     public G value() {
         if (actionGet != null)
-            actionGet.run();
+            actionGet.run(value);
         return value;
     }
 
     public void set(G value) {
         this.value = value;
         if (actionSet != null)
-            actionSet.run();
+            actionSet.run(value);
+    }
+
+    @Override
+    public String toString() {
+        return value.toString();
     }
 
     public void setActionGet(RunnableObjects actionGet) {
@@ -36,4 +35,5 @@ public class Property<G>  {
     public void setActionSet(RunnableObjects actionSet) {
         this.actionSet = actionSet;
     }
+
 }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <anime name="rogue_idle">
+        <file src="Sprites/rogue_idle.png" dimX="100" dimY="100" frames="3" cubicscale="2"/>
+    </anime>
+    <anime name="something_else">
+        <file src="Sprites/thissss.png" dimX="100" dimY="100" frames="3" cubicscale="1"/>
+    </anime>
+</root>

@@ -1,9 +1,10 @@
-package us.gtnova.lib.event;
+package us.gtnova.lib.global;
 
 import us.gtnova.lib.runnable.RunnableObjects;
+import us.gtnova.lib.utils.Log;
 
-import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Set;
 
 public class PubSub {
@@ -26,7 +27,7 @@ public class PubSub {
                         curEvent.run(args);
                     } catch (ClassCastException e) {
                        // Log.e("Hi :)", "Unable to cast Arguments!");
-                        //TODO implement logger
+                        Log.ERROR(topic, "unable to cast Arguments");
                         e.printStackTrace();
                     }
             }
@@ -35,7 +36,7 @@ public class PubSub {
 
     public static long subscribe(String topic, RunnableObjects event) {
         if (!registrar.containsKey(topic)) {
-            addSubscriber((Set<Long>) new ArrayList<Long>(), idSize, event, topic);
+            addSubscriber(new HashSet<>(), idSize, event, topic);
         } else {
             addSubscriber(registrar.get(topic), idSize, event, topic);
         }
