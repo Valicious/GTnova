@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa4dab07-b566-444a-9d0e-ad60a9b1ba6b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/res/anime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/us/gtnova/game/entity/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/us/gtnova/lib/global/GlobalVars.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/us/gtnova/lib/handlers/Anime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/us/gtnova/lib/runnable/Drawable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/us/gtnova/lib/utils/Console.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/us/gtnova/lib/utils/Pause.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Blocks/Dirt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Blocks/Stone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assets/Sprites/Player.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev_build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/us/gtnova/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/us/gtnova/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/us/gtnova/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/us/gtnova/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/us/gtnova/lib/Controls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/us/gtnova/lib/Controls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/us/gtnova/lib/event/GlobalVars.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/us/gtnova/lib/event/PubSub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/us/gtnova/lib/global/PubSub.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/us/gtnova/lib/utils/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/us/gtnova/lib/utils/Property.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/us/gtnova/lib/global/GlobalVars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/us/gtnova/lib/global/GlobalVars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/us/gtnova/lib/utils/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/us/gtnova/lib/utils/Console.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +19,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/us/gtnova/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
+            <state relative-caret-position="496">
               <caret line="32" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -46,7 +31,7 @@
       <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/us/gtnova/game/entity/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
+            <state relative-caret-position="232">
               <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -55,11 +40,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Console.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Console.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/us/gtnova/lib/utils/Console.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="114" column="41" lean-forward="true" selection-start-line="114" selection-start-column="41" selection-end-line="114" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#doGlobalVars#0;class#Console#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controls.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/us/gtnova/lib/Controls.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="550">
-              <caret line="34" column="24" lean-forward="true" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+              <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GlobalVars.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GlobalVars.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/us/gtnova/lib/global/GlobalVars.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="440">
+              <caret line="56" column="25" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -138,11 +136,11 @@
         <option value="$PROJECT_DIR$/res/anime.xml" />
         <option value="$PROJECT_DIR$/src/us/gtnova/game/Game.java" />
         <option value="$PROJECT_DIR$/src/us/gtnova/lib/utils/Pause.java" />
-        <option value="$PROJECT_DIR$/src/us/gtnova/lib/Controls.java" />
         <option value="$PROJECT_DIR$/src/us/gtnova/Main.java" />
         <option value="$PROJECT_DIR$/src/us/gtnova/lib/utils/Property.java" />
-        <option value="$PROJECT_DIR$/src/us/gtnova/lib/global/GlobalVars.java" />
         <option value="$PROJECT_DIR$/src/us/gtnova/game/entity/Player.java" />
+        <option value="$PROJECT_DIR$/src/us/gtnova/lib/global/GlobalVars.java" />
+        <option value="$PROJECT_DIR$/src/us/gtnova/lib/Controls.java" />
         <option value="$PROJECT_DIR$/src/us/gtnova/lib/utils/Console.java" />
       </list>
     </option>
@@ -170,6 +168,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -250,7 +249,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -373,11 +371,20 @@
       <workItem from="1536054810186" duration="12271000" />
       <workItem from="1536135219462" duration="11245000" />
       <workItem from="1536671081667" duration="82000" />
+      <workItem from="1536761951373" duration="7894000" />
     </task>
+    <task id="LOCAL-00001" summary="updating base files">
+      <created>1536762210045</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1536762210045</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42520000" />
+    <option name="totallyTimeSpent" value="50414000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -385,6 +392,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32897604" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -406,11 +414,11 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978212" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32897604" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" side_tool="true" weight="0.32995737" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
@@ -421,19 +429,35 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updating base files" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating base files" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="22" />
+      <option name="time" value="30" />
     </breakpoint-manager>
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>path[1].split(&quot;\\.&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>path[1]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>path[1].split(&quot;.&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/us/gtnova/lib/global/PubSub.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="946">
-          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/us/gtnova/lib/Controls.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1210">
@@ -593,13 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="3366" column="13" selection-start-line="3366" selection-start-column="13" selection-end-line="3366" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/us/gtnova/lib/event/Global.java" />
     <entry file="file://$PROJECT_DIR$/src/us/gtnova/lib/runnable/Drawable.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -626,13 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/us/gtnova/lib/utils/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-164">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -686,13 +696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/us/gtnova/lib/Controls.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/us/gtnova/lib/utils/Pause.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -707,30 +710,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/us/gtnova/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/us/gtnova/game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/us/gtnova/game/entity/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -741,16 +724,6 @@
           <folding>
             <element signature="e#248#249#0" expanded="true" />
             <element signature="e#282#283#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/us/gtnova/lib/global/GlobalVars.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -769,12 +742,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/us/gtnova/lib/utils/Console.java">
+    <entry file="file://$PROJECT_DIR$/src/us/gtnova/lib/utils/Log.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+        <state relative-caret-position="22">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/us/gtnova/game/entity/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/us/gtnova/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/us/gtnova/lib/Controls.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="136" column="12" selection-start-line="136" selection-start-column="12" selection-end-line="136" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/util/stream/Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="934" column="16" selection-start-line="934" selection-start-column="16" selection-end-line="934" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/us/gtnova/lib/global/GlobalVars.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="56" column="25" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/us/gtnova/lib/utils/Console.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="114" column="41" lean-forward="true" selection-start-line="114" selection-start-column="41" selection-end-line="114" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#doGlobalVars#0;class#Console#0" />
           </folding>
         </state>
       </provider>

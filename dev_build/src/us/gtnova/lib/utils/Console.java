@@ -2,7 +2,12 @@ package us.gtnova.lib.utils;
 
 import us.gtnova.lib.global.GlobalVars;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class Console {
@@ -28,9 +33,17 @@ public class Console {
     }
 
     private static void command(String input) {
-        input = input.replaceAll(" ", "");
+        if (input.substring(0, 2).equals("<<"))
+            doRunner(input.substring(2, input.length()));
+        else
+            doGlobalVars(input.replaceAll(" ", ""));
+
+
+    }
+
+    private static void doGlobalVars(String input) {
         int pos = input.indexOf('=');
-        String variableName = "";
+        String variableName;
         String variableValue = "";
         if (pos == -1) {
             variableName = input;
@@ -55,6 +68,55 @@ public class Console {
                 System.out.println("No handler defined for this variable type: " + var.getClass().getName());
         } else {
             System.out.println("Something went wrong! '" + input + "'");
+        }
+    }
+
+    private static void doRunner(String input) {
+        final String loc = "us.gtnova.";
+        if (input.isEmpty())
+            System.out.println(loc);
+        else {
+            try {
+                String[] path = input.split("#");
+                final Class<?> clazz = Class.forName(loc + path[0]);
+                String[] chain = path[1].split("\\.");
+                final List<Method> methods = new ArrayList<>();
+
+                int counter = 0;
+                for (String sMeth : chain) {
+                    if (counter == 0)
+                        methods.add(
+                                Arrays.stream(clazz.getMethods())
+                                        .filter(meth -> meth.getName().equals(sMeth))
+                                        .findFirst()
+                                        .get()
+                        );
+                    else {
+                        Class<?> type = methods.get(counter - 1).getReturnType();
+                        methods.add(
+                                Arrays.stream(type.getMethods())
+                                        .filter(meth -> meth.getName().equals(sMeth))
+                                        .findFirst()
+                                        .get()
+                        );
+                    }
+                    counter++;
+                }
+                Object prev = null;
+                for (Method cur : methods) {
+                    try {
+                        prev = cur.invoke(prev);
+                    } catch (IllegalAccessException | InvocationTargetException e) {
+                        System.out.println("Only works on static Parent(for now :) ) and no children with parameters");
+                        e.printStackTrace();
+                        break;
+                    }
+                }
+                System.out.println(prev);
+            } catch (ClassNotFoundException e) {
+                System.out.println("Class not found");
+                e.printStackTrace();
+            }
         }
     }
 }
