@@ -10,6 +10,10 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * <title>Console commands</title>
+ * <p>Use the console to alter the game during runtime</p>
+ */
 public class Console {
     private static Property<Boolean> active;
     private static Pause pause;
@@ -41,6 +45,12 @@ public class Console {
 
     }
 
+    /**
+     * Access and change variables stored in the global variable class
+     * @Usage name=x will set variable
+     * @Usage name will get variable
+     * @param input the command to execute
+     */
     private static void doGlobalVars(String input) {
         int pos = input.indexOf('=');
         String variableName;
@@ -71,6 +81,11 @@ public class Console {
         }
     }
 
+    /**
+     * Access and public static class with no parameters (even in chaining methods)
+     * @Usage path.of.class#method.chain
+     * @param input
+     */
     private static void doRunner(String input) {
         final String loc = "us.gtnova.";
         if (input.isEmpty())
