@@ -3,6 +3,7 @@ package us.gtnova;
 import processing.core.PApplet;
 import processing.event.KeyEvent;
 import us.gtnova.game.Game;
+import us.gtnova.lib.utils.Global;
 
 public class Main extends PApplet {
     private Game game;
@@ -14,7 +15,7 @@ public class Main extends PApplet {
     /*void Setup(){}*/
     public void settings() {
         //Property<PApplet> app = new Property<>(this);
-
+        Global.setContext(this);
         size(1000, 700);
 
         game = new Game();
