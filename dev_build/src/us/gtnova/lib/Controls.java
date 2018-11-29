@@ -1,20 +1,15 @@
 package us.gtnova.lib;
 
-import processing.core.PApplet;
 import processing.core.PConstants;
-import us.gtnova.lib.utils.Pause;
+import us.gtnova.lib.utils.Log;
 
 import java.util.HashMap;
-
-import static us.gtnova.lib.global.GlobalVars.getContext;
-import static us.gtnova.lib.global.PubSub.sendMessage;
 
 public class Controls {
     //TODO save and load controls to a file
     private HashMap<Character, Runnable> cKeys = new HashMap<>();
     private HashMap<Integer, Runnable> iKeys = new HashMap<>();
 
-    private Pause pause = new Pause();
 
     public Controls() {
         cKeys.put('w', getRunner("key_W"));
@@ -36,26 +31,12 @@ public class Controls {
     }
 
     public void update() {
-        if (!pause.done) return;
-        pause.pause(20);
 
-        PApplet app = getContext();
-        if (app.keyPressed) {
-            try {
-                cKeys.get(app.key).run();
-            } catch (NullPointerException ec) {
-                try {
-                    iKeys.get(app.keyCode).run();
-                } catch (NullPointerException ei) {
-                    System.out.println("no global for " + app.key + " and " + app.keyCode);
-                }
-            }
-        }
 
     }
 
     private Runnable getRunner(String name) {
-        return () -> sendMessage(name);
+        return () -> Log.INFO(name);
     }
 }
 
