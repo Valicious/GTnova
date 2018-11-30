@@ -6,17 +6,16 @@ import us.gtnova.lib.utils.Animation;
 public class Player {
     private int xPos;
     private int yPos;
-    private Main context;
-    public Animation anime;
+    public Animation idle;
 
     public Player(int X,int Y)
     {
         xPos = X;
         yPos = Y;
-        anime = new Animation("Sprites/rogue_idle.png",100,100,3);
+        idle = new Animation("Sprites/rogue_idle.png",100,100,3);
 
     }
     public void update(){
-        anime.update(100,100);
+        idle.draw(xPos,xPos);
     }
 }

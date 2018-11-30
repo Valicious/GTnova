@@ -25,7 +25,7 @@ public class Main extends PApplet {
         background(50);
         text(frameRate, 10, 10);
         //frame.setSize(screenWidth.value(), screenHeight.value());
-        game.onDraw();
+        game.onDraw(frameRate);
     }
 
     @Override
